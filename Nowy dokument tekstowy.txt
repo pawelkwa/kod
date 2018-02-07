@@ -1,0 +1,439 @@
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod
+$ ls -a
+./  ../  .idea/  day2/
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod
+$ ls -al
+total 8
+drwxr-xr-x 1 pkwasny 1049089 0 sty 31 18:50 ./
+drwxr-xr-x 1 pkwasny 1049089 0 sty 31 18:35 ../
+drwxr-xr-x 1 pkwasny 1049089 0 sty 31 18:55 .idea/
+drwxr-xr-x 1 pkwasny 1049089 0 sty 31 18:55 day2/
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod
+$ git init .
+Initialized empty Git repository in D:/info_share_python/kod/.git/
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ histr
+bash: histr: command not found
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ histry
+bash: histry: command not found
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+
+
+
+
+
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        day2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git add day2/helloword.py
+.idea/ day2/
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git add day2/helloword.py
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   day2/helloword.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git commit -m "add helloword to the repository"
+[master (root-commit) 70432ce] add helloword to the repository
+ Committer: Kwaœny Pawe³ <pkwasny@emitel.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 day2/helloword.py
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git add day2/helloworld.py
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git commit -m "add helloworld to the repository"
+[master 58a70a7] add helloworld to the repository
+ Committer: Kwaœny Pawe³ <pkwasny@emitel.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 7 insertions(+)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 day2/helloworld.py
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    day2/helloword.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/.name
+        .idea/codeStyles/
+        .idea/encodings.xml
+        .idea/kod.iml
+        .idea/misc.xml
+        .idea/modules.xml
+        .idea/workspace.xml
+
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git log
+commit 58a70a73fed99b32ec945df19e65ae0f3df2aeda (HEAD -> master)
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:24:18 2018 +0100
+
+    add helloworld to the repository
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git log -p
+commit 58a70a73fed99b32ec945df19e65ae0f3df2aeda (HEAD -> master)
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:24:18 2018 +0100
+
+    add helloworld to the repository
+
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/day2/helloworld.py b/day2/helloworld.py
+new file mode 100644
+index 0000000..5742f8c
+--- /dev/null
++++ b/day2/helloworld.py
+@@ -0,0 +1 @@
++print('Hello, wordl')
+\ No newline at end of file
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+diff --git a/day2/helloword.py b/day2/helloword.py
+new file mode 100644
+index 0000000..78c4b4b
+--- /dev/null
++++ b/day2/helloword.py
+@@ -0,0 +1 @@
++print('Hello, wordl1')
+\ No newline at end of file
+      2 [sig] bash 12116! sigpacket::process: Suppressing signal 18 to win32 process (pid 15584)
+diff --git a/day2/helloworld.py b/day2/helloworld.py
+new file mode 100644
+index 0000000..5742f8c
+--- /dev/null
++++ b/day2/helloworld.py
+@@ -0,0 +1 @@
++print('Hello, wordl')
+\ No newline at end of file
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+diff --git a/day2/helloword.py b/day2/helloword.py
+new file mode 100644
+index 0000000..78c4b4b
+--- /dev/null
++++ b/day2/helloword.py
+@@ -0,0 +1 @@
++print('Hello, wordl1')
+\ No newline at end of file
+6443682 [sig] bash 12116! sigpacket::process: Suppressing signal 18 to win32 process (pid 15584)
+diff --git a/day2/helloworld.py b/day2/helloworld.py
+new file mode 100644
+index 0000000..5742f8c
+--- /dev/null
++++ b/day2/helloworld.py
+@@ -0,0 +1 @@
++print('Hello, wordl')
+\ No newline at end of file
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+diff --git a/day2/helloword.py b/day2/helloword.py
+new file mode 100644
+index 0000000..78c4b4b
+--- /dev/null
++++ b/day2/helloword.py
+@@ -0,0 +1 @@
++print('Hello, wordl1')
+\ No newline at end of file
+7597326 [sig] bash 12116! sigpacket::process: Suppressing signal 18 to win32 process (pid 15584)
+\ No newline at end of file
+diff --git a/day2/helloworld.py b/day2/helloworld.py
+new file mode 100644
+index 0000000..5742f8c
+--- /dev/null
++++ b/day2/helloworld.py
+@@ -0,0 +1 @@
++print('Hello, wordl')
+\ No newline at end of file
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+diff --git a/day2/helloword.py b/day2/helloword.py
+new file mode 100644
+index 0000000..78c4b4b
+--- /dev/null
++++ b/day2/helloword.py
+@@ -0,0 +1 @@
++print('Hello, wordl1')
+ ESCOD
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:24:18 2018 +0100
+
+    add helloworld to the repository
+
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/day2/helloworld.py b/day2/helloworld.py
+new file mode 100644
+index 0000000..5742f8c
+--- /dev/null
++++ b/day2/helloworld.py
+@@ -0,0 +1 @@
++print('Hello, wordl')
+\ No newline at end of file
+
+commit 70432ce7823eb843b75ac7c7b44cc7dbb56f3a1d
+Author: Kwaœny Pawe³ <pkwasny@emitel.local>
+Date:   Wed Jan 31 19:19:55 2018 +0100
+
+    add helloword to the repository
+
+diff --git a/day2/helloword.py b/day2/helloword.py
+new file mode 100644
+index 0000000..78c4b4b
+--- /dev/null
++++ b/day2/helloword.py
+@@ -0,0 +1 @@
++print('Hello, wordl1')
+\ No newline at end of file
+ ESCOC
+elloworld.py
+
+
+
+
+
+
+
+
+56f3a1d
+al>
+
+
+
+
+lloword.py
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ bash: OC: command not found
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ git: 'g' is not a git command. See 'git --help'.
+
+The most similar commands are
+        grep
+        gc
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
+$ On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    day2/helloword.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   day2/helloworld.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/.name
+        .idea/codeStyles/
+        .idea/encodings.xml
+        .idea/kod.iml
+        .idea/misc.xml
+        .idea/modules.xml
+        .idea/workspace.xml
+
+
+pkwasny@TE00DSCU554199 MINGW64 /d/info_share_python/kod (master)
